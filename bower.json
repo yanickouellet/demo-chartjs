@@ -1,0 +1,19 @@
+{
+  "name": "chartjs",
+  "version": "0.0.0",
+  "authors": [
+    "yanickouellet <yanickouellet555@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "chartjs": "~1.0.1"
+  }
+}

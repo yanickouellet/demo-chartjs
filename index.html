@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+</head>
+<body>
+    <canvas id="chart" width="400" height="400"></canvas>  
+    <script src="bower_components\chartjs\Chart.js"></script>
+    <script>
+        var ctx = document.getElementById("chart").getContext("2d");
+
+        var data = {
+            labels: ['2010', '2011', '2013', '2014'],
+            datasets: [
+                {
+                    label: "First dataset",
+                    fillColor: "rgba(220, 220, 220, 0.2)",
+                    strokeColor: "rgba(220, 220, 220, 1)",
+                    pointStrokeColor: "#fff",
+                    pointHighlightFill: "#fff",
+                    pointHighlightStroke: "rgba(220, 220, 220, 1)",
+                    data: [10000, 10500, 11000, 11500]
+                }
+            ]
+        };
+
+        var chart = new Chart(ctx).Line(data);
+    </script>
+</body>
+</html>
+
